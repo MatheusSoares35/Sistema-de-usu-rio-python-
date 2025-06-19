@@ -1,13 +1,7 @@
-import tkinter as tk
-
-# Cria a janela principal
-janela = tk.Tk()
-
-# Define o título da janela
-janela.title("Minha Janela Tkinter")
-
-# Define as dimensões da janela (opcional)
-janela.geometry("400x300")  # Largura x Altura
-
-# Inicia o loop principal da janela
+from tkinter import *
+janela = Tk()
+janela.title("aqui temos uma janela")
+janela.geometry('420x420')
+label = Label(janela,text="aqui temos um texto",font=('arial',20,'bold'),fg='green')
+label.pack()
 janela.mainloop()
